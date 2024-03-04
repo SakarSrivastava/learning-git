@@ -1,4 +1,4 @@
-# github
+# learning-git
 
 - version control system
 - suppose you make an app, initially its 1st version
@@ -23,25 +23,53 @@
 
 ## commands
 
-#### git --version
+- git --version
 
-#### create new repo on command line. 
+- ls - la
 
-echo "# learning-git" >> README.md
+- git status
+
+- git remote -v 
+// it tells us on which repo we are going to push the code.
+
+- git branch
+// tell the current branch in which code is to be pushed.
+
+## create new repo on command line. 
+
+- echo "# learning-git" >> README.md
 // create the readme.md file on local machine.
 
-git init
+- git init
 // initialize .git file to the folder to track changes.
 
-git add README.md
-// creates the readme.md file on the github repository.
+- git add README.md
+// push the readme.md file on the github repository.
 
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/SakarSrivastava/learning-git.git
-git push -u origin main
+- git commit -m "first commit"
+// save the changes in the files that are added on the git.
 
-#### push an existing repository from the command line
+- git branch -M main
+// change the branch to main
+
+- git remote add origin https://github.com/SakarSrivastava/learning-git.git
+// push the file on the particular repository.
+
+- git push -u origin (main) --> if branch is chnaged to main.  
+    or
+- git push -u origin (master) --> name of current branch.
+
+
+## push the changes done in the uploaded file
+
+- git add .
+
+- git commit -m "message"
+
+- git push -u origin master
+
+
+## push an existing repository from the command line
 
 git remote add origin https://github.com/SakarSrivastava/learning-git.git
 git branch -M main
